@@ -1,0 +1,134 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #0c0f1b; /* Color de fondo oscuro */
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    transition: background-color 0.3s ease;
+}
+
+.stars {
+    background: url('https://www.transparenttextures.com/patterns/stardust.png');
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.5;
+}
+
+.container {
+    background: #1c1f2b; /* Color de fondo */
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 0 30px rgba(255, 255, 255, 0.1);
+    max-width: 400px;
+    width: 100%;
+}
+
+.scroll-container {
+    max-height: 80vh;
+    overflow-y: auto;
+    padding-right: 10px;
+}
+
+.calculator {
+    text-align: center;
+}
+
+.calculator h1 {
+    margin-bottom: 20px;
+    font-size: 2.5em;
+    color: #ff6b6b; /* Color rosado llamativo */
+    font-weight: 600;
+}
+
+.input-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 1.1em;
+    color: #ddd; /* Color gris claro */
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background: #292f3f; /* Color de fondo oscuro */
+    color: #fff;
+    font-size: 1em;
+    transition: all 0.3s ease;
+}
+
+.input-group input:focus {
+    outline: none;
+    background: #333a4d; /* Color de fondo oscuro al enfocar */
+}
+
+.calculate-btn {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    background: linear-gradient(45deg, #ff6b6b, #5567d9); /* Degradado de colores llamativos */
+    color: #fff;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background 0.3s;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.calculate-btn:hover {
+    background: linear-gradient(45deg, #ff8787, #6a7bd8); /* Hover efecto degradado */
+}
+
+#result {
+    margin-top: 20px;
+    text-align: center;
+}
+
+#profit-bar-container {
+    width: 100%;
+    background: #292f3f; /* Color de fondo oscuro */
+    border-radius: 5px;
+    overflow: hidden;
+    margin: 10px 0;
+    height: 20px;
+    position: relative;
+}
+
+#profit-bar {
+    width: 0;
+    height: 100%;
+    background: #f3a683; /* Color naranja llamativo */
+    transition: width 0.3s;
+}
+
+#profit-percentage {
+    font-size: 1.2em;
+    color: #f3a683; /* Color naranja llamativo */
+    margin-top: 10px;
+}
+
+.fa-coins {
+    color: #ff6b6b; /* Color rosado llamativo */
+    margin-right: 5px;
+}
